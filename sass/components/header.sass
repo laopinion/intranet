@@ -1,0 +1,141 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Colores */
+$negro: #333333 
+$blanco: #fff
+$rojo: #B82025
+$gris: #eaeaea
+$grisOscuro: #C8C8C8
+$grisSuperOscuro: #848484
+$font-mediana: 18px
+
+#fecha_actual
+    color: $blanco
+    width: 180px
+    position: relative
+    padding: 15px
+    float: left
+    left: 14%
+    top: 30px
+
+#app_intranet
+    background-color: $negro
+    width: 100%
+    height: 67.3px
+
+#menu
+    position: absolute
+    z-index: 250
+    ul
+        display: none
+
+.btn-menu
+    border: none
+    padding: 10px
+    border-radius: 5px
+    width: 260px
+    text-align: left
+    font-size: 18px
+    color: $rojo
+    outline: 0
+    background-color: $blanco
+
+.app_menu
+    margin-top: 20px
+
+.app_icono_menu
+    margin-left: 65%
+    color: gray
+
+.app_drop_menu
+    background-color: $negro
+    color: $blanco
+    padding: 0
+    .divider
+        border-top: 1px solid
+        padding: 0
+    li
+        list-style: none
+        padding: 0px
+        a
+            color: $blanco
+            text-decoration: none
+            padding: 10px 88px 10px 28px
+            display: block
+
+.app_drop_menu
+    li:hover
+        background-color: gray
+
+.search
+    background-color: $blanco
+    padding: 5px
+    height: 45px
+    float: right
+    width: 70%
+    .form
+        display: inline
+        font-size: $font-mediana
+        color: $rojo
+        margin: 0 25px
+        .buscador
+            display: inherit
+            width: 100%
+            margin-left: 25px
+            input[type="text"]
+                padding: 3px
+                display: inline
+                border: none
+                font-size: $font-mediana
+                background-color: $gris
+                width: 75%
+                border-radius: 4px
+            input:focus
+                outline: none
+                -moz-box-shadow: 0px 0px 5px $negro
+                -webkit-box-shadow: 0px 0px 5px $negro
+                box-shadow: 0px 0px 5px $negro
+            span
+                background-color: $grisOscuro
+                padding: 5.5px 0px
+                border-radius: 4px                
+                button 
+                    background: url("../img/buscar.svg") top no-repeat
+                    background-size: 120% 120%
+                    padding: 20px
+                    border: none
+                    vertical-align: middle
+                    margin-top: -5px
+
+#logo_o
+    background: url("../img/log intranet.svg") 0px 0px/200px auto no-repeat
+    height: 100px
+    width: 200px
+    display: inline-block
+    position: relative
+    left: -5%
+
+@media only screen and (max-width: 480px)
+    .search
+        float: left
+        width: 99%
+        .form
+            width: 100%
+            margin: 0
+            .buscador
+                display: inline
+                width: 100%
+                margin-left: 0px
+                input[type="text"]
+                    width: 64%
+                input:focus
+                    outline: none
+                    -moz-box-shadow: 0px 0px 5px $negro
+                    -webkit-box-shadow: 0px 0px 5px $negro
+                    box-shadow: 0px 0px 5px $negro
+                span
+                    width: 100%                
+                    button 
+                        padding: 14px

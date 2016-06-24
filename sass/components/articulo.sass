@@ -1,0 +1,131 @@
+#articulo
+    margin-top: 20px
+    .cumple_user
+        margin: 0
+    .view-usuarios
+        #user
+            margin-right: 1.5%
+
+.menu_articulo
+    margin-top: 20px
+    padding: 0
+    .opciones
+        padding: 0
+
+.menu_lateral
+    background-color: $blanco
+    width: 83.8%
+    ul
+        padding: 0
+        .divider
+            border-top: 1px solid $gris
+            &:hover
+                background-color: transparent
+        li
+            list-style: none
+            padding: 0px
+            a
+                text-decoration: none
+                color: $negro
+                padding: 10px 20px
+                display: block
+                &:hover
+                    color: $blanco
+        li:hover
+            background-color: rgba($rojo, 0.8)
+
+.mas_publicaciones
+    width: 100%
+    float: left
+    position: relative
+
+.seccion
+    margin-top: 25px
+    .tax
+        a
+            text-decoration: none
+            color: $rojo
+
+.der
+    margin-left: -6%
+    h1
+        color: $grisSuperOscuro
+
+.app_publicaciones
+    margin-right: 10px
+    overflow: hidden
+    .titulo_maspublic
+        width: 100%
+    span
+        position: absolute
+        z-index: 100
+        top: 268px
+        background-color: rgba($negro, 0.7)
+        width: 32%
+        height: 50px
+        padding: 16px
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+        color: $blanco
+        margin-left: 0%
+        border-radius: 4px 0
+        a
+            text-decoration: none
+            color: $blanco
+            font-size: $font-mediana
+    span:hover
+        background-color: $rojo
+
+.otraspublicac
+    margin: 0
+    .views-row
+        width: 33%
+        height: 200px
+        display: inline-block
+        img
+            width: 100%
+            height: 250px
+
+.foto
+    .field-item .even
+        width: 100%
+        height: auto
+        
+@media only screen and (max-width: 480px)
+    .foto
+        .field-item
+            img
+                height: 200px
+                width: 300px
+    .field-items
+        p
+            margin: 0
+            padding: 0
+            img
+                height: 210px
+                width: 280px
+    .opciones
+        display: none
+
+    .menu_articulo
+        .der
+            margin: 0
+
+    .mas_publicaciones
+        .otraspublicac 
+            .views-row
+                display: block
+                margin-bottom: 70px
+                width: 100%
+                .app_publicaciones
+                    margin: 0
+                    overflow: none
+                    .titulo_maspublic
+                        span
+                            position: relative
+                            z-index: 150
+                            top: -50px
+                            display: block
+                            margin-left: 0%
+                            width: 100%

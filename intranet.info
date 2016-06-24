@@ -1,0 +1,17 @@
+name = Intranet
+description = Intranet es el sitio creado para la opinión, el muro interno de la empresa 
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[content]        = Content
+regions[footer]         = Footer
+
+
+; Information added by drupal.org packaging script on 2011-11-02
+version = "7.x-3.6"
+core = "7.x"
+project = "intranet"
+datestamp = "1320214533"

@@ -14,7 +14,7 @@
 						<li class="divider"></li>
 						<li><a href="<?php print base_path(); ?>?q=documentos">Formato de Solicitudes</a></li>
 						<li class="divider"></li>
-					    <li><a href="<?php print base_path(); ?>actividades">Actividades</a></li>
+					    <li><a href="<?php print base_path(); ?>?q=actividades">Actividades</a></li>
 					    <li class="divider"></li>
 					    <li><a href="<?php print base_path(); ?>?q=cumpleanos">Cumpleaños</a></li>
 					    <li class="divider"></li>

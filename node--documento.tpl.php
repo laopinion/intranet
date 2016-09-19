@@ -18,7 +18,11 @@
 					    <li class="divider"></li>
 					    <li><a href="<?php print base_path(); ?>?q=vacaciones">Vacaciones</a></li>
 					    <li class="divider"></li>
-					    <li><a href="#">Action</a></li>
+					    <li><a href="<?php print base_path(); ?>celebraciones">Celebraciones</a></li>
+					    <li class="divider"></li>
+					    <li><a href="<?php print base_path(); ?>entrevista-del-mes">Entrevistas</a></li>
+					    <li class="divider"></li>
+					    <li><a href="<?php print base_path(); ?>comunicados">Comunicados</a></li>
 					</ul>
 				</div>
 			</div>

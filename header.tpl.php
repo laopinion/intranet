@@ -1,51 +1,28 @@
-	<section class="" id="app_intranet">
-		<a href="<?php print base_path(); ?>"><div id="logo_o"></div></a>
-		<div id="fecha_actual">
-			<script>
+<header>
+	<a href="<?php print base_path(); ?>">
+		<div class="logo"></div>
+	</a>
+	<div id="fecha">
+		<script>
 			var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 			var f=new Date();
-			document.write(meses[f.getMonth()] + " " + f.getDate() + " de " + f.getFullYear());
-			</script>
-		</div>
-	</section>
-<header>
-	<section class="app_container app_menu">
-		<div class="row">
-			<div id="menu">
-				<div>
-					<button class="btn-menu">
-					    Menu
-						<span class="glyphicon glyphicon-menu-hamburger app_icono_menu"></span>
-					</button>
-					<ul class="app_drop_menu" id="target">
-						<li><a href="<?php print base_path(); ?>">Home</a></li>
-					  	<li><a href="<?php print base_path(); ?>?q=documentos">Formato de Solicitudes</a></li>
-					    <li><a href="<?php print base_path(); ?>?q=actividades">Actividades</a></li>
-					    <li><a href="<?php print base_path(); ?>?q=cumpleanos">Cumpleaños</a></li>
-					    <li><a href="<?php print base_path(); ?>?q=vacaciones">Vacaciones</a></li>
-					    <li class="divider"></li>
-					    <li><a href="http://localhost/proyecto/?q=/buscar_usuario">Buscar empleado</a></li>
-					    <li><a href="<?php print base_path(); ?>celebraciones">Celebraciones</a></li>
-					    <li><a href="<?php print base_path(); ?>entrevista-del-mes">Entrevistas</a></li>
-					    <li><a href="<?php print base_path(); ?>comunicados">Comunicados</a></li>
-					</ul>
-				</div>
+		document.write(f.getDate() +" de "+ meses[f.getMonth()] + " de " + f.getFullYear());
+		</script>
+	</div>
+	<section id="barra">
+		<article class="container">
+			<div id="hamburger">
+				<span class="izq_arriba"></span>
+				<span class="der_arriba"></span>
+				<span></span>
+				<span></span>
+				<span class="izq_abajo"></span>
+				<span class="der_abajo"></span>
 			</div>
-			<a href="http://localhost/proyecto/?q=buscar">
-			<div class="search">
-				<form class="form">
-				   Buscar
-				    <div class="buscador">
-				      <span class="input_btn">
-				      	<input type="text" class="form_input" disabled>
-				        <button class="btn_buscar" type="button"></button>
-				      </span>
-				    </div>
-					<?//php $buscar_bloque = module_invoke('buscar', 'block_view', 'Page'); 
-					//print render($buscar_bloque); ?>
-				</form>
-			</div>
+			<a href="#buscar">
+				<div class="buscador"></div>
+				<h4>Buscar</h4>
 			</a>
-		</div> <!-- row-->
-	</section>
+		</article>
+	</section>	
 </header>

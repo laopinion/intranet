@@ -15,7 +15,6 @@
 
         <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/normalize.min.css">
         <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/style.css">
-        <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/bootstrap.css">
 
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/modernizr-2.8.3.min.js"></script>
         <?php print $styles; ?>

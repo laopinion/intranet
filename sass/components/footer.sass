@@ -1,18 +1,57 @@
 footer
     width: 100%
     background-color: $negro-claro
+    .politica
+        background-color: $blanco
+    .container-politica
+        width: 1000px
+        margin: 0 auto
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        padding: 40px 0
+        .cuadro
+            width: 100%
+            border: 1px solid #B7B7B7
+            display: flex
+            display: -webkit-flex
+            display: -moz-flex
+            align-items: center
+            -webkit-align-items: center
+            -moz-align-items: center
+        p
+            width: 560px
+            padding: 0 10px
+            font-size: 12px
+            border-left: 2px solid #8E9398
+            margin-bottom: 0
+        .logo-footer
+            background: url(../images/logo.svg) 0px -110px/366px auto no-repeat
+            width: 366px
+            height: 150px
+            margin: 20px 10px
+            position: relative
+            .fecha
+                position: absolute
+                bottom: 40px
+                left: 130px
+                color: #999999
     .container
         width: 1000px
         margin: 0 auto
         display: flex
+        display: -webkit-flex
+        display: -moz-flex
         .formatos_footer
             width: 473px
             color: $blanco
             .view-header
                 text-align: center
             .view-content
+                padding: 0 10px
                 .views-row
                     width: 100%
+                    margin-bottom: 20px
                     .titulo
                         display: none
                     .contenido
@@ -20,12 +59,15 @@ footer
                     .archivo
                         display: inline-block
                         vertical-align: middle
+                        width: 408px
                         img
                             display: none
                         a
                             text-decoration: none
                             color: $blanco
                             font-size: 24px
+                        a:hover
+                            text-decoration: underline
                     .icono-descarga
                         background: url(../images/descargar.svg) -20px -13px/80px auto no-repeat
                         height: 40px
@@ -36,7 +78,7 @@ footer
             width: 463px
             color: $blanco
             h2
-                font-size: 24px
+                font-size: 16px
                 text-align: center
                 margin-bottom: 0
             h4
@@ -49,9 +91,10 @@ footer
                         width: 100%
                         border: none
                         border-radius: 6px
-                        font-size: 24px
+                        font-size: 16px
                         background-color: #D1D1D1
                         color: #333
+                        height: 30px
                 .webform-component--departamento
                     display: inline-block
                     vertical-align: top
@@ -61,7 +104,8 @@ footer
                     margin-left: 5px
                     select
                         width: 100%
-                        font-size: 24px
+                        height: 30px
+                        font-size: 16px
                         border-radius: 6px
                         background-color: #D1D1D1
                         color: $negro
@@ -75,7 +119,8 @@ footer
                     margin-left: 5px
                     select
                         width: 100%
-                        font-size: 24px
+                        height: 30px
+                        font-size: 16px
                         border-radius: 6px
                         background-color: #D1D1D1
                         color: $negro
@@ -84,12 +129,12 @@ footer
                     textarea
                         border-radius: 6px
                         color: $negro
-                        font-size: 24px
+                        font-size: 16px
                 .form-actions
                     width: 100%
                     input
                         width: 100%
-                        font-size: 24px
+                        font-size: 16px
                         background-color: $rojo
                         border: none
                         border-radius: 6px

@@ -15,27 +15,21 @@
 
         <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/normalize.min.css">
         <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/style.css">
-
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/jquery-1.11.2.min.js"> </script>
+        <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/script.js"></script>
+        
         <?php print $styles; ?>
         <?php print $scripts; ?>
     </head>
     <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-
+        <?php print $page_top; ?>
         <!--CONTENT GENERAL-->
-          <?php print $page_top; ?>
           <div class="centerContent borderContent">
             <div class="head_desktop"><?php include("header.tpl.php"); ?></div>
-            
             <?php print $page; ?>
-            <?php // print $page_bottom; ?>
             <div class="footer_desktop"><?php include("footer.tpl.php"); ?></div>
           </div>
         <!--END CONTENT GENERAL-->
-
-
-        <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/jquery-1.11.2.min.js"> </script>
-        <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/script.js"></script>
-        <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/bootstrap.js"></script>
     </body>
 </html>

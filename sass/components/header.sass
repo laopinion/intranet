@@ -43,6 +43,7 @@ header
                 left: 40px
                 top: 0
                 background-color: #A32F3D
+                display: none
             #hamburger
                 width: 50px
                 height: 32px
@@ -140,35 +141,68 @@ header
                 color: #fff
                 font-size: 30px
             .buscador
-                width: 40px
-                height: 40px
-                background: url(../images/lupa.svg) 0px -8px/40px auto no-repeat
+                width: 35px
+                height: 35px
+                background: url(../images/lupa.svg) 0px -8px/35px auto no-repeat
                 display: inline-block
                 vertical-align: top
             h4
                 display: inline-block
                 vertical-align: top
                 margin: 0
+                font-size: 24px
             .menu
-                display: none
                 position: absolute
-                top: 81px
-                z-index: 100
+                top: -378px
+                z-index: -1
                 background-color: #747373
                 width: 240px
-                left: 15px
+                left: 38px
+                transition: .3s
+                overflow: hidden
                 ul
                     padding: 0
                     li
                         list-style: none
-                        padding: 5px 34px
-                        width: 172px
+                        padding: 5px 0
+                        width: 100%
                         text-align: left
                         a
-                            font-size: 27px
+                            font-size: 18px
+                            padding: 0 25px
+                            display: block
+                            width: 190px
+                    li:hover > a
+                        color: $negro
+                    .marca
+                        background-color: $gris
+                        transition: .3s
+                        top: -30%
+                        left: 0
+                        width: 100%
+                        height: 12.5%
+                        position: absolute
+                        z-index: -1                       
+
+                    li:nth-child(1):hover ~ .marca
+                        top: 7px
+                    li:nth-child(3):hover ~ .marca
+                        top: 16.5%
+                    li:nth-child(5):hover ~ .marca
+                        top: 30%
+                    li:nth-child(7):hover ~ .marca
+                        top: 43.1%
+                    li:nth-child(9):hover ~ .marca
+                        top: 56%
+                    li:nth-child(11):hover ~ .marca
+                        top: 69%
+                    li:nth-child(13):hover ~ .marca
+                        top: 82%
+
                     .divider
                         border-bottom: 1px solid $blanco
-                        width: 100px
+                        width: 190px
                         margin: 0 auto
             .desplegar
-                display: block
+                top: 80px
+                z-index: 100

@@ -23,19 +23,20 @@
 			<div class="menu">
 				<ul>
 					<li><a href="#">Entrevista del mes</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
 					<li><a href="#">Formatos de solicitudes</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
 					<li><a href="#">Talleres</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
 					<li><a href="#">Actividades</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
 					<li><a href="#">Cuestionarios</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
 					<li><a href="#">Comites</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
 					<li><a href="#">Galerias</a></li>
-					<li class="divider"></li>
+					<div class="divider"></div>
+					<div class="marca"></div>
 				</ul>
 			</div>
 			<a href="#buscar">

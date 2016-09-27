@@ -1,7 +1,8 @@
 <footer>
 	<section class="container">
 		<div class="formatos_footer">
-			<!--Formatos--><?php $view = views_get_view('home'); print $view->preview('block_3'); ?><!--Fin formatos-->
+			<h2>Formatos</h2>
+			<!--Formatos--><?php $view = views_get_view('formatos'); print $view->preview('block'); ?><!--Fin formatos-->
 		</div>
 		<div class="formulario">
 			<h2>Formulario</h2>

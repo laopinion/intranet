@@ -99,6 +99,8 @@ section
             .cumple
                 float: left
                 width: 100%
+                border-bottom: 1px solid $gris
+                padding-bottom: 40px
                 .title
                     text-align: center
                     width: 260px
@@ -113,6 +115,8 @@ section
                         position: relative
                         background-color: $azul
                         border-radius: 50%
+                        width: 150px
+                        height: 150px
                         .nombre
                             position: relative
                             z-index: 1
@@ -120,19 +124,29 @@ section
                             white-space: nowrap
                             overflow: hidden
                             font-weight: 700
+                            top: -30px
                         .foto
                             text-align: center
+                            width: 150px
+                            height: 150px
+                            overflow: hidden
+                            border-radius: 50%
+                            img
+                                position: relative
+                                left: -2px
+                                top: 0px
+                                width: 130px
                         .cinta
                             position: absolute
                             background: url(../images/cinta.svg) -7px -15px/230px auto no-repeat
                             width: 205px
                             height: 50px
                             left: -35px
-                            top: 91px
+                            top: 108px
                         .fecha
                             position: absolute
                             right: -35px
-                            top: 100px
+                            top: 115px
                             background-color: $rojo
                             color: $blanco
                             border-radius: 50%
@@ -145,5 +159,226 @@ section
                                 width: 35px
                                 float: left
                                 margin-left: 4px
+            .vacaciones
+                float: left
+                width: 100%
+                border-bottom: 1px solid $gris
+                padding-bottom: 50px
+                .title
+                    text-align: center
+                    width: 260px
+                    margin: 0 auto
+                    background-color: #891D25
+                    color: white
+                    font-size: 20px
+                .views-row
+                    float: left
+                    margin-right: 80px
+                    .vaca
+                        position: relative
+                        background-color: $azul
+                        border-radius: 50%
+                        width: 150px
+                        height: 150px
+                        .foto
+                            text-align: center
+                            width: 150px
+                            height: 150px
+                            overflow: hidden
+                            border-radius: 50%
+                            img
+                                position: relative
+                                left: -2px
+                                top: 0px
+                                width: 130px
+                        .marco
+                            text-align: center
+                            position: relative
+                            top: -33px
+                            background-color: $gris
+                            border-radius: 4px
+                            padding: 5px
+                        .nombre
+                            position: relative
+                            z-index: 1
+                            width: 145px
+                            white-space: nowrap
+                            overflow: hidden
+                            font-weight: 700
+                        .fecha
+                            position: relative
+                            z-index: 1
+                            width: 145px
+                            white-space: nowrap
+                            overflow: hidden
+                            font-weight: 700
 
+            .fechas-recordar
+                float: left
+                width: 100%
+                border-bottom: 1px solid $gris
+                padding: 50px 0
+                background-color: #ADADAD
+                margin-top: 40px
+                margin-bottom: 50px
+                .title
+                    text-align: center
+                    width: 300px
+                    margin: 0 auto
+                    background-color: #891D25
+                    color: white
+                    font-size: 20px
+                    position: absolute
+                    left: 0
+                    right: 0
+                    height: 50px
+                    h2
+                        margin: 0
+                        height: 50
+                .view-id-home.view-display-id-block_2
+                    background: rgba(204,204,204,1)
+                    background: -moz-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(255,255,255,1)))
+                    background: -webkit-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+                    background: -o-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+                    background: -ms-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+                    background: radial-gradient(ellipse at center, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff', GradientType=1 )
+                    padding: 70px 40px 10px 40px
+                    .view-content
+                        display: flex
+                        display: -webkit-flex
+                        display: -moz-flex
+                        .nota
+                            display: flex
+                            display: -webkit-flex
+                            display: -moz-flex
+                            .info
+                                margin: 10px
+                                font-size: 20px
+                                color: #333
+                                font-weight: 700
+                                p
+                                    margin: 0
 
+            .nuevos
+                float: left
+                width: 100%
+                border-top: 1px solid $gris
+                padding: 0
+                .title
+                    text-align: center
+                    width: 260px
+                    margin: 0 auto
+                    background-color: #891D25
+                    color: white
+                    font-size: 20px
+                .views-row
+                    float: left
+                    margin-right: 80px
+                    .news
+                        position: relative
+                        background-color: $azul
+                        border-radius: 50%
+                        width: 150px
+                        height: 150px
+                        .foto
+                            text-align: center
+                            width: 150px
+                            height: 150px
+                            overflow: hidden
+                            border-radius: 50%
+                            img
+                                position: relative
+                                left: -2px
+                                top: 0px
+                                width: 130px
+                        .marco
+                            text-align: center
+                            position: relative
+                            top: -33px
+                            background-color: $gris
+                            border-radius: 4px
+                            padding: 5px
+                        .nombre
+                            position: relative
+                            z-index: 1
+                            width: 145px
+                            white-space: nowrap
+                            overflow: hidden
+                            font-weight: 700
+                        .fecha
+                            position: relative
+                            z-index: 1
+                            width: 145px
+                            white-space: nowrap
+                            overflow: hidden
+                            font-weight: 700
+
+            .notas-gente
+                position: relative
+                float: left
+                width: 100%
+                margin-top: 50px
+                background: rgba(255,255,255,1)
+                background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+                background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(204,204,204,1)))
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+                background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+                background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+                background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 )
+                .title
+                    width: 200px
+                    height: 40px
+                    background-color: $rojo
+                    color: $blanco
+                    text-align: center
+                    margin-top: 20px
+                    h2
+                        margin: 0
+                        height: 40px
+                        display: block
+                        padding-top: 3px
+                .triangulo
+                    width: 0
+                    height: 0
+                    border-top: 20px solid transparent
+                    border-right: 20px solid #dcdcdc
+                    border-bottom: 20px solid transparent
+                    position: absolute
+                    top: 20px
+                    left: 180px
+                .view-id-home.view-display-id-block_3
+                    padding: 10px
+                    margin-top: 20px
+                    .view-content
+                        display: flex
+                        display: -webkit-flex
+                        display: -moz-flex
+                        .views-row
+                            background-color: #E5E1E1
+                            border-radius: 5px
+                            width: 500px
+                        .views-row:first-child
+                            margin-right: 10px
+                        .nota
+                            display: flex
+                            display: -webkit-flex
+                            display: -moz-flex
+                            .info
+                                width: 100%
+                                background-color: white
+                                display: flex
+                                display: -webkit-flex
+                                display: -moz-flex
+                                align-items: center
+                                -webkit-align-items: center
+                                -moz-align-items: center
+                                padding-left: 10px
+                                margin: 20px 5px
+                                a
+                                    text-decoration: none
+                                    color: $negro
+                                    font-size: 20px
+                                    font-weight: 700

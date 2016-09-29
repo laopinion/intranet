@@ -42,6 +42,18 @@
                 <div class="triangulo"></div>
                 <!--Notas--><?php $view = views_get_view('home'); print $view->preview('block_3'); ?><!--FIN Notas--> 
             </div>
+            <div class="noestan">
+                <div class="title">
+                    <h2>Los que ya no están con nosotros</h2>
+                </div>
+                <!--No estan--><?php $view = views_get_view('usuarios'); print $view->preview('block_4'); ?><!--FIN No estan--> 
+            </div>
+            <div class="galeria">
+                <div class="title">
+                    <h2>Galerías</h2>
+                </div>
+                <!--Galeria--><?php $view = views_get_view('home'); print $view->preview('block_4'); ?><!--FIN Galeria--> 
+            </div><!--Fin galeria-->
         </div>
     </div>      
 </section>

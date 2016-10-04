@@ -14,20 +14,26 @@
             <div class="cumple">
                 <div class="title">
                     <h2>Cumpleaños</h2>
-                </div>
-                <!--Cumpleaños--><?php $view = views_get_view('usuarios'); print $view->preview('block'); ?><!--FIN Cumpleaños--> 
+                </div>                
+                <div class="previous"></div>
+                <!--Cumpleaños--><?php $view = views_get_view('usuarios'); print $view->preview('block'); ?><!--FIN Cumpleaños-->
+                <div class="next"></div>
             </div>
             <div class="vacaciones">
                 <div class="title">
                     <h2>Vacaciones</h2>
                 </div>
-                <!--Vacaciones--><?php $view = views_get_view('usuarios'); print $view->preview('block_1'); ?><!--FIN Vacaciones--> 
+                <div class="previous"></div>
+                <!--Vacaciones--><?php $view = views_get_view('usuarios'); print $view->preview('block_1'); ?><!--FIN Vacaciones-->                
+                <div class="next"></div>
             </div>
             <div class="fechas-recordar">
                 <div class="title">
                     <h2>¿Sabia usted qué?</h2>
                 </div>
-                <!--Fechas para recordar--><?php $view = views_get_view('home'); print $view->preview('block_2'); ?><!--FIN Fechas para recordar--> 
+                <div class="previous"></div>
+                <!--Fechas para recordar--><?php $view = views_get_view('home'); print $view->preview('block_2'); ?><!--FIN Fechas para recordar-->                               
+                <div class="next"></div>
             </div>
             <div class="nuevos">
                 <div class="title">

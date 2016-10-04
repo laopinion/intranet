@@ -12,6 +12,7 @@
         <meta name="author" content="intranet" />
         <meta name="ROBOTS" content="NOFOLLOW">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="fb:pages" content="323137824476732" />
 
         <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/normalize.min.css">
         <link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/intranet/css/style.css">

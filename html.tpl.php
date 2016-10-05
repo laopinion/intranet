@@ -19,6 +19,7 @@
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/jquery-1.11.2.min.js"> </script>
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/script.js"></script>
+        <!-- <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/jquery.arctext.js"></script> -->
         
         <?php print $styles; ?>
         <?php print $scripts; ?>

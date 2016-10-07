@@ -63,6 +63,20 @@ $(document).ready(function() {
 		$('#cumpleanos .vacaciones .previous').css("display", "none");
 	});//FIN VACACIONES
 
+	/*---------SECCION VACACIONES-----------*/
+	//INICIO CUMPLEAÑOS
+	$('#vacaciones .cumple .next').click(function(){
+		$('#vacaciones .cumple .view-content').css("left", "-939px");
+		$('#vacaciones .cumple .next').css("display", "none");
+		$('#vacaciones .cumple .previous').css("display", "block");
+	});
+
+	$('#vacaciones .cumple .previous').click(function(){
+		$('#vacaciones .cumple .view-content').css("left", "23px");		
+		$('#vacaciones .cumple .next').css("display", "block");
+		$('#vacaciones .cumple .previous').css("display", "none");
+	});//FIN CUMPLEAÑOS
+
 	var mes = $("#entrevista-mes .entrevista-actual .view-display-id-block .views-field-field-fecha span").html();
 	console.log(mes);
 	

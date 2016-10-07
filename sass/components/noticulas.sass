@@ -12,35 +12,78 @@
             border-bottom: 1px solid #B1B1B0
     .view-content
         position: relative
-    .nota
-        display: flex
-        align-items: center
-        .foto
-            position: relative
-            z-index: 1
-            img
-                border-radius: 50%
-                width: 300px
-                height: 300px
-                border: 30px solid $blanco
+    .views-row:nth-child(2n+1)
+        .nota
+            display: flex
+            display: -webkit-flex
+            display: -moz-flex
+            align-items: center
+            -webkit-align-items: center
+            -moz-align-items: center
+            .foto
                 position: relative
-        .info
-            padding: 20px
-            background-color: #8A2431
-            color: $blanco
-            font-size: 18px
-            line-height: 20px
-            position: absolute
-            width: 70%
-            right: 20px
-            z-index: -1
-            .title
-                margin-left: 150px
-                a
-                    text-decoration: none
-                    color: $blanco
-                    font-size: 24px
-                    border-bottom: 1px solid $blanco
-            .contenido
+                z-index: 1
+                img
+                    border-radius: 50%
+                    width: 300px
+                    height: 300px
+                    border: 30px solid $blanco
+                    position: relative
+            .info
+                padding: 20px
+                background-color: #8A2431
+                color: $blanco
+                font-size: 18px
+                line-height: 20px
+                position: absolute
                 width: 70%
-                margin-left: 150px
+                right: 20px
+                z-index: -1
+                .title
+                    margin-left: 150px
+                    a
+                        text-decoration: none
+                        color: $blanco
+                        font-size: 24px
+                        border-bottom: 1px solid $blanco
+                .contenido
+                    width: 70%
+                    margin-left: 150px
+    .views-row:nth-child(2n)
+        .nota
+            display: flex
+            display: -webkit-flex
+            display: -moz-flex
+            align-items: center
+            -webkit-align-items: center
+            -moz-align-items: center
+            justify-content: flex-end
+            .foto
+                position: relative
+                z-index: 1
+                img
+                    border-radius: 50%
+                    width: 300px
+                    height: 300px
+                    border: 30px solid $blanco
+                    position: relative
+            .info
+                padding: 20px
+                background-color: #8A2431
+                color: $blanco
+                font-size: 18px
+                line-height: 20px
+                position: absolute
+                width: 70%
+                left: 20px
+                z-index: -1
+                .title
+                    margin-left: 0
+                    a
+                        text-decoration: none
+                        color: $blanco
+                        font-size: 24px
+                        border-bottom: 1px solid $blanco
+                .contenido
+                    width: 70%
+                    margin-left: 0

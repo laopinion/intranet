@@ -1,132 +1,91 @@
-#articulo
-    margin-top: 20px
-    .cumple_user
-        margin: 0
-    .view-usuarios
-        #user
-            margin-right: 1.5%
-
-.menu_articulo
-    margin-top: 20px
-    padding: 0
-    .opciones
-        padding: 0
-
-.menu_lateral
-    background-color: $blanco
-    width: 83.8%
-    ul
-        padding: 0
-        .divider
-            border-top: 1px solid $gris
-            &:hover
-                background-color: transparent
-        li
-            list-style: none
-            padding: 0px
-            a
-                text-decoration: none
-                color: $negro
-                padding: 10px 20px
-                display: block
-                &:hover
-                    color: $blanco
-        li:hover
-            background-color: rgba($rojo, 0.8)
-
-.mas_publicaciones
+#article
     width: 100%
-    float: left
-    position: relative
-    margin-top: 20px
-
-.seccion
-    margin-top: 25px
-    .tax
-        a
-            text-decoration: none
-            color: $rojo
-
-.der
-    margin-left: -6%
-    h1
-        color: $grisSuperOscuro
-
-.app_publicaciones
-    margin-right: 10px
-    overflow: hidden
-    .titulo_maspublic
+    margin-top: 10px
+    .container
+        width: 1000px
+        margin: 0 auto
+    .resumen
         width: 100%
-    span
-        position: absolute
-        z-index: 100
-        top: 268px
-        background-color: rgba($negro, 0.7)
-        width: 32%
-        height: 50px
-        padding: 16px
-        text-overflow: ellipsis
-        white-space: nowrap
-        overflow: hidden
+        background-color: #A01921
         color: $blanco
-        margin-left: 0%
-        border-radius: 4px 0
-        a
-            text-decoration: none
+        padding: 10px 0
+        font-size: 22px
+        position: relative
+        top: -5px
+        line-height: 25px
+    .titulo
+        font-size: 46px
+        background-color: gray
+        color: white
+        text-align: center
+        margin-top: 20px
+        text-transform: capitalize
+        border-radius: 6px
+    .texto
+        border-bottom: 2px solid #A01921
+        padding-bottom: 20px
+        margin-bottom: 30px
+    .notas-gente
+        position: relative
+        background: rgba(255,255,255,1)
+        background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(204,204,204,1)))
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 )
+        .title
+            width: 200px
+            height: 40px
+            background-color: $rojo
             color: $blanco
-            font-size: $font-mediana
-    span:hover
-        background-color: $rojo
-
-.otraspublicac
-    margin: 0
-    .views-row
-        width: 33%
-        height: 200px
-        display: inline-block
-        img
-            width: 100%
-            height: 250px
-
-.foto
-    .field-item .even
-        width: 100%
-        height: auto
-        
-@media only screen and (max-width: 480px)
-    .foto
-        .field-item
-            img
-                height: 200px
-                width: 300px
-    .field-items
-        p
-            margin: 0
-            padding: 0
-            img
-                height: 210px
-                width: 280px
-    .opciones
-        display: none
-
-    .menu_articulo
-        .der
-            margin: 0
-
-    .mas_publicaciones
-        .otraspublicac 
-            .views-row
+            text-align: center
+            margin-top: 20px
+            h2
+                margin: 0
+                height: 40px
                 display: block
-                margin-bottom: 70px
-                width: 100%
-                .app_publicaciones
-                    margin: 0
-                    overflow: none
-                    .titulo_maspublic
-                        span
-                            position: relative
-                            z-index: 150
-                            top: -50px
-                            display: block
-                            margin-left: 0%
-                            width: 100%
+                padding-top: 3px
+        .triangulo
+            width: 0
+            height: 0
+            border-top: 20px solid transparent
+            border-right: 20px solid #dcdcdc
+            border-bottom: 20px solid transparent
+            position: absolute
+            top: 20px
+            left: 180px
+        .view-id-home.view-display-id-block_3
+            padding: 10px
+            margin-top: 20px
+            .view-content
+                display: flex
+                display: -webkit-flex
+                display: -moz-flex
+                .views-row
+                    background-color: #E5E1E1
+                    border-radius: 5px
+                    width: 500px
+                .views-row:first-child
+                    margin-right: 10px
+                .nota
+                    display: flex
+                    display: -webkit-flex
+                    display: -moz-flex
+                    .info
+                        width: 100%
+                        background-color: white
+                        display: flex
+                        display: -webkit-flex
+                        display: -moz-flex
+                        align-items: center
+                        -webkit-align-items: center
+                        -moz-align-items: center
+                        padding-left: 10px
+                        margin: 20px 5px
+                        a
+                            text-decoration: none
+                            color: $negro
+                            font-size: 20px
+                            font-weight: 700

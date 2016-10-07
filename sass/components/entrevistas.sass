@@ -9,15 +9,10 @@
         border-bottom: 1px solid #B0B0B0
         width: 100%
     .entrevista-actual
-        .mes
-            width: 130px
-            font-size: 25px
-            background-color: #F29100
-            color: #fff
-            text-align: center
-            text-transform: uppercase
-            padding-right: 20px
-            border-radius: 0 10px 10px 0
+        position: relative
+        
+    .entrevistas-anteriores
+        border-bottom: 1px solid $gris
     .view-id-secciones.view-display-id-block
         display: flex
         display: -webkit-flex
@@ -49,6 +44,7 @@
             justify-content: center
             -webkit-justify-content: center
             -moz-justify-content: center
+            margin-top: 40px
         .view-footer
             width: 50%
             display: flex
@@ -76,6 +72,27 @@
             width: 300px
             height: 300px
             border: 20px solid #F29100
+
+        .views-field-field-fecha
+            position: absolute
+            top: 0 
+            background-color: #f29100
+            color: $blanco
+            font-size: 22px
+            padding: 5px
+            left: -15px
+            border-radius: 0 10px 10px 0
+            padding-right: 90px
+
+        .emojis
+            width: 40px
+            height: 40px
+            background: url(../images/emojis.svg)
+            //background-position: -50px -3px 
+            background-size: 220px
+            position: absolute
+            top: 0px
+            left: 100px
 
     .view-id-secciones.view-display-id-block_1
         display: flex
@@ -119,8 +136,8 @@
             h3:hover
                 opacity: 0.9
             .views-field-field-imagen-portada
-                margin-top: 35px
-            .views-field-created
+                margin-top: 50px
+            .views-field-field-fecha-1
                 position: absolute
                 top: 0 
                 background-color: #f29100
@@ -129,36 +146,71 @@
                 padding: 5px
                 left: -15px
                 border-radius: 0 10px 10px 0
-                padding-right: 40px
-        .views-row-2
-            h3
-                text-align: center
-                font-size: 24px
-                margin-bottom: 0
-                background-color: #D61A21
-                border-radius: 15px
-                width: 90%
-                margin: 0 auto
-                margin-top: 10px
-                padding: 5px
-                a
-                    text-align: center
-                    text-decoration: none
-                    color: #ffffff
-            h3:hover
-                opacity: 0.9
-            .views-field-created
+                padding-right: 90px
+            .emojis
+                width: 40px
+                height: 40px
+                background: url(../images/emojis.svg)
+                //background-position: -50px -3px 
+                background-size: 220px
                 position: absolute
-                top: 0 
-                background-color: #D61A21
+                top: 0
+                left: 75px
+
+    .fechas-recordar
+        float: left
+        width: 100%
+        border-bottom: 1px solid $gris
+        padding: 50px 0
+        background-color: #ADADAD
+        margin-top: 40px
+        margin-bottom: 50px
+        position: relative
+        .title
+            text-align: center
+            width: 300px
+            margin: 0 auto
+            background-color: #891D25
+            color: white
+            font-size: 20px
+            position: absolute
+            left: 0
+            right: 0
+            height: 50px
+            h2
+                margin: 0
+                height: 50px
                 color: $blanco
-                font-size: 22px
-                padding: 5px
-                left: -15px
-                border-radius: 0 10px 10px 0
-                padding-right: 40px
-            img
-                border-radius: 50%
-                width: 250px
-                height: 250px
-                border: 20px solid #D61A21
+        .view-id-home.view-display-id-block_2
+            overflow: hidden
+            background: rgba(204,204,204,1)
+            background: -moz-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(204,204,204,1)), color-stop(100%, rgba(255,255,255,1)))
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+            background: -o-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+            background: -ms-radial-gradient(center, ellipse cover, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+            background: radial-gradient(ellipse at center, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 100%)
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff', GradientType=1 )
+            padding: 70px 40px 10px 40px
+            .views-row
+                width: 472px
+                margin-right: 9px
+            .view-content
+                display: flex
+                display: -webkit-flex
+                display: -moz-flex
+                width: 2500px
+                position: relative
+                left: 0
+                transition: .3s
+                .nota
+                    display: flex
+                    display: -webkit-flex
+                    display: -moz-flex
+                    .info
+                        margin: 10px
+                        font-size: 20px
+                        color: #333
+                        font-weight: 700
+                        p
+                            margin: 0

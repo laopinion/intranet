@@ -1,85 +1,190 @@
 @charset "utf-8"
 
-#user_profile
-    margin-top: 20px
-    .foto
-        float: left
-        img
-            width: 100px
-            margin: 0
-    .texto
-        float: left
-        margin-left: 15px
-        .field-name-field-genero
-            display: none
-        .field-name-field-vacaciones
-            display: none
-        .field-name-field-departamento
-            position: absolute
-            left: -14px
-            top: 190px
-            background-color: $rojo
-            padding: 5px 0
-            width: 100px
-            .field-label
-                background: url("../img/iconos dependencias.svg") no-repeat
-                height: 40px
-                width: 100px
-                text-indent: -9999px
-            .formatos
-                padding: 10px
-            .Cartera
-                background-position: -213px -4px
-            .Redacción
-                background-position: 25px -5px
-            .editorial
-                background-position: 26px -94px
-            .Documentación
-                background-position: 24px -170px
-            .Servicios
-                background-position: -445px -95px
-            .Contabilidad
-                background-position: -88px -5px
-            .Biblioteca
-                background-position: -335px -4px
-            .Comercial
-                background-position: -445px -8px
-            .Despacho
-                background-position: -85px -93px
-            .Circulación
-                background-position: -212px -92px
-            .Almacen
-                background-position: -332px -92px
-            .Opinografica
-                background-position: -90px -171px
-            .Rotativa
-                background-position: -210px -172px
-            .Administración
-                background-position: -332px -172px
-            .Gerencia
-                background-position: -445px -171px
-            .Mercadeo
-                background-position: 22px -248px
-            .Qhubo
-                background-position: -88px -250px
-            .Producción
-                background-position: 24px -6px
-            .field-items
-                text-align: center
-                div
+#perfil
+    width: 100%
+    .title
+        background-color: #891D25
+        text-align: center
+        width: 100%
+        color: $blanco
+
+    .container
+        width: 1000px
+        margin: 0 auto
+
+    .datos
+        width: 100%
+        background-color: #E8E6E6
+        .foto
+            
+            .user-picture
+                position: relative
+                background-color: $azul
+                border-radius: 50%
+                width: 150px
+                height: 150px
+                overflow: hidden
+                img
+                    position: relative
+                    left: 8px
+                    top: 0px
+                    width: 130px
+            .perfil-foto
+                display: inline-block
+                vertical-align: top
+            .perfil-datos
+                display: inline-block
+                vertical-align: top
+                width: 80%
+                margin-left: 20px
+                .info
+                    display: flex
+                    display: -webkit-flex
+                    display: -moz-flex
+                    flex-wrap: wrap
+                    -webkit-flex-wrap: wrap
+                    -moz-flex-wrap: wrap
+                    .field
+                        width: 200px
+                        margin-bottom: 20px
+                        .field-label
+                            color: #636363
+                        .field-items
+                            color: #7C7C7C
+
+    .cumple
+        border-bottom: 1px solid $gris
+        padding-bottom: 40px
+        overflow: hidden
+        position: relative
+        .title
+            text-align: center
+            width: 260px
+            margin: 0 auto
+            background-color: #891D25
+            color: white
+            font-size: 20px
+        .view-content
+            float: left
+            width: 2500px
+            position: relative
+            left: 23px
+            transition: .3s
+        .views-row
+            float: left
+            margin-right: 100px
+            .cumpleanos
+                position: relative
+                background-color: $azul
+                border-radius: 50%
+                width: 150px
+                height: 150px
+                .nombre
+                    position: relative
+                    z-index: 1
+                    width: 145px
+                    white-space: nowrap
+                    overflow: hidden
+                    font-weight: 700
+                    top: -30px
+                .foto
+                    text-align: center
+                    width: 150px
+                    height: 150px
+                    overflow: hidden
+                    border-radius: 50%
+                    img
+                        position: relative
+                        left: -2px
+                        top: 0px
+                        width: 130px
+                .cinta
+                    position: absolute
+                    background: url(../images/cinta.svg) -7px -15px/230px auto no-repeat
+                    width: 205px
+                    height: 50px
+                    left: -35px
+                    top: 108px
+                .fecha
+                    position: absolute
+                    right: -35px
+                    top: 115px
+                    background-color: $rojo
                     color: $blanco
-        .field
-            margin-bottom: 5px
-            .field-label
-                text-transform: capitalize
-                color: $grisSuperOscuro
-            .field-items
-                color: $negro
-    .datos_personales
-        margin-bottom: 35px
-        margin-left: 7%
-        .der
-            .titulo
-                margin-top: 0
-                margin-bottom: 15px
-                color: $grisSuperOscuro
+                    border-radius: 50%
+                    z-index: 1
+                    white-space: nowrap
+                    overflow: hidden
+                    width: 35px
+                    font-size: 25px
+                    span
+                        width: 35px
+                        float: left
+                        margin-left: 4px
+
+    .notas-gente
+        position: relative
+        margin-top: 50px
+        padding-top: 5px
+        background: rgba(255,255,255,1)
+        background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(204,204,204,1)))
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc', GradientType=1 )
+        .title
+            width: 200px
+            height: 40px
+            background-color: $rojo
+            color: $blanco
+            text-align: center
+            margin-top: 20px
+            h2
+                margin: 0
+                height: 40px
+                display: block
+                padding-top: 3px
+        .triangulo
+            width: 0
+            height: 0
+            border-top: 20px solid transparent
+            border-right: 20px solid #dcdcdc
+            border-bottom: 20px solid transparent
+            position: absolute
+            top: 25px
+            left: 180px
+        .view-id-home.view-display-id-block_3
+            padding: 10px
+            margin-top: 20px
+            .view-content
+                display: flex
+                display: -webkit-flex
+                display: -moz-flex
+                .views-row
+                    background-color: #E5E1E1
+                    border-radius: 5px
+                    width: 500px
+                .views-row:first-child
+                    margin-right: 10px
+                .nota
+                    display: flex
+                    display: -webkit-flex
+                    display: -moz-flex
+                    .info
+                        width: 100%
+                        background-color: white
+                        display: flex
+                        display: -webkit-flex
+                        display: -moz-flex
+                        align-items: center
+                        -webkit-align-items: center
+                        -moz-align-items: center
+                        padding-left: 10px
+                        margin: 20px 5px
+                        a
+                            text-decoration: none
+                            color: $negro
+                            font-size: 20px
+                            font-weight: 700

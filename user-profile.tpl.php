@@ -1,47 +1,35 @@
-<section id="user_profile">
-	<div class="app_container">
-		<div class="row menu_articulo">	
-			<div class="col-md-3 opciones">
-				<div class="menu_lateral">
-					<ul>
-						<li class="divider"></li>
-						<li><a href="<?php print base_path(); ?>">Home</a></li>
-						<li class="divider"></li>
-						<li><a href="<?php print base_path(); ?>?q=documentos">Formato de Solicitudes</a></li>
-						<li class="divider"></li>
-					    <li><a href="#">Actividades</a></li>
-					    <li class="divider"></li>
-					    <li><a href="<?php print base_path(); ?>?q=cumpleanos">Cumpleaños</a></li>
-					    <li class="divider"></li>
-					    <li><a href="<?php print base_path(); ?>?q=vacaciones">Vacaciones</a></li>
-					    <li class="divider"></li>
-					    <li><a href="#">Action</a></li>
-					</ul>
-				</div>
-			</div>
-	      <div class="col-md-6 datos_personales">	      
-		      <div class="der">
-		        <h1 class="titulo">Nuestro personal</h1>
-		        <div class="foto">
-		        	<?php print render($user_profile['user_picture']);?>
-		        </div>
-		        <div class="texto">
-		        	<?php print render($user_profile);?>
-		        </div> 
-		      </div>  
-		   </div> <!-- cierre del col-->
-		</div>
+<section id="perfil">
+	<div class="title container">
+		<h1>Nuestro personal</h1>
+	</div>
+	<div class="datos">
+	    <div class="foto">
+	    	<div class="container" style="padding: 40px 0; border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;">
+	    		<div class="perfil-foto">
+	    			<?php print render($user_profile['user_picture']);?>
+	    		</div>
+			    <div class="perfil-datos">
+			    	<div class="info">
+			    		<?php print render($user_profile);?>
+			    	</div>
+			    </div> 
+	    	</div>
+	    </div>
+	</div>  
 
-		<div class="row">
-    		<div class="app_cumple">
-            <!--cumpleaños--><?php $view = views_get_view('usuarios'); print $view->preview('block'); ?><!--FIN cumpleaños-->
-            </div>
-    	</div>
+	<div class="cumple container">
+        <div class="title">
+            <h2>Cumpleaños</h2>
+        </div>                
+        <!--Cumpleaños--><?php $view = views_get_view('usuarios'); print $view->preview('block'); ?><!--FIN Cumpleaños-->
+    </div>
 
-    	<div class="row">
-    		<div class="mas_publicaciones">
-            <!--OtrasPublicaciones--><?php $view = views_get_view('home'); print $view->preview('block_4'); ?><!--FIN OtrasPublicaciones-->
-            </div>
-    	</div>
-	</div> <!-- Cierre del container-->
+    <div class="notas-gente container">
+        <div class="title">
+            <h2>Notas</h2>
+        </div>
+        <div class="triangulo"></div>
+        <!--Notas--><?php $view = views_get_view('home'); print $view->preview('block_3'); ?><!--FIN Notas--> 
+    </div>
 </section>

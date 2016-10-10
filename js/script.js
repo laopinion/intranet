@@ -78,7 +78,7 @@ $(document).ready(function() {
 	});//FIN CUMPLEAÑOS
 
 	var mes = $("#entrevista-mes .entrevista-actual .view-display-id-block .views-field-field-fecha span").html();
-	console.log(mes);
+	//console.log(mes);
 	
 	if(mes == "Enero"){
 	  $("#entrevista-mes .entrevista-actual .view-display-id-block .emojis").css("background-position", "-122px -42px");
@@ -180,6 +180,53 @@ $(document).ready(function() {
 	      $(this).find("img").css({border:"20px solid #007644"}); 
 	      $(this).find("h3").css({background:"#007644"}); 
 	      $(this).find(".views-field-field-fecha-1").css({background:"#007644"});
+	    }
+    });
+
+	//Galerias
+	$("#galerias .view-id-secciones.view-display-id-block_3 .views-row").each(function(){
+    	var mes = $(this).find(".fecha span").html();
+    	//console.log(mes);
+	    if(mes == "Enero"){
+	      $(this).find(".emojis").css("background-position", "-122px -42px");
+	      $(this).find(".fecha").css({background:"#005691"});  
+	    }else if(mes == "Febrero"){
+	      $(this).find(".emojis").css("background-position", "-90px -42px");
+	      $(this).find(".fecha").css({background:"#F18751"}); 
+	    }else if(mes == "Marzo"){
+	      $(this).find(".emojis").css("background-position", "-50px -42px");
+	      $(this).find(".fecha").css({background:"#42ACB2"}); 
+	    }else if(mes == "Abril"){
+	      $(this).find(".emojis").css("background-position", "-86px -3px");
+	      $(this).find(".fecha").css({background:"#7EC4A7"}); 
+	    }else if(mes == "Mayo"){
+	      $(this).find(".emojis").css("background-position", "-6px -40px");
+	      $(this).find(".fecha").css({background:"#9760A4"}); 
+	    }else if(mes == "Junio"){
+	      $(this).find(".emojis").css("background-position", "-5px -4px");
+	      $(this).find(".fecha").css({background:"#899657"}); 
+	    }else if(mes == "Julio"){
+	      $(this).find(".emojis").css("background-position", "-50px -3px ");
+	      $(this).find(".fecha").css({background:"#C172AD"}); 
+	    }else if(mes == "Agosto"){
+	      $(this).find(".emojis").css("background-position", "-85px -80px");
+	      $(this).find(".fecha").css({background:"#01A3BF"}); 
+	    }else if(mes == "Septiembre"){
+	      $(this).find(".emojis").css("background-position", "-120px -248px");
+	      $(this).find(".emojis").css("left", "135px");
+	      $(this).find(".fecha").css({background:"#D61A21"}); 
+	    }else if(mes == "Octubre"){
+	      $(this).find(".emojis").css("background-position", "-50px -80px ");
+	      $(this).find(".emojis").css("left", "100px");
+	      $(this).find(".fecha").css({background:"#F29100"}); 
+	    }else if(mes == "Noviembre"){
+	      $(this).find(".emojis").css("background-position", "-158px -285px");
+	      $(this).find(".emojis").css("left", "135px");
+	      $(this).find(".fecha").css({background:"#E796B7"}); 
+	    }else if(mes == "Diciembre"){
+	      $(this).find(".emojis").css("background-position", "-7px -205px");
+	      $(this).find(".emojis").css("left", "135px");
+	      $(this).find(".fecha").css({background:"#007644"}); 
 	    }
     });
 

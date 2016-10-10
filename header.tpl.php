@@ -22,11 +22,11 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<li><a href="#">Entrevista del mes</a></li>
+					<li><a href="<?php print base_path(); ?>entrevista-del-mes">Entrevista del mes</a></li>
 					<div class="divider"></div>
-					<li><a href="#">Formatos de solicitudes</a></li>
+					<li><a href="<?php print base_path(); ?>cumpleanos">Cumpleaños</a></li>
 					<div class="divider"></div>
-					<li><a href="#">Talleres</a></li>
+					<li><a href="<?php print base_path(); ?>vacaciones">Vacaciones</a></li>
 					<div class="divider"></div>
 					<li><a href="#">Actividades</a></li>
 					<div class="divider"></div>
@@ -34,7 +34,7 @@
 					<div class="divider"></div>
 					<li><a href="#">Comites</a></li>
 					<div class="divider"></div>
-					<li><a href="#">Galerias</a></li>
+					<li><a href="<?php print base_path(); ?>galerias">Galerias</a></li>
 					<div class="divider"></div>
 					<div class="marca"></div>
 				</ul>

@@ -19,7 +19,8 @@
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/vendor/jquery-1.11.2.min.js"> </script>
         <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/script.js"></script>
-        <!-- <script src="<?php print base_path(); ?>sites/default/themes/intranet/js/jquery.arctext.js"></script> -->
+        <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/intranet/js/jssor.js"></script>
+        <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/intranet/js/jssor.slider.js"></script>
         
         <?php print $styles; ?>
         <?php print $scripts; ?>

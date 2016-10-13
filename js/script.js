@@ -1,9 +1,9 @@
 $(document).ready(function() {
     
-    $("header #barra .container #hamburger").click(function (){
+    $("header #hamburger").click(function (){
     	$(this).toggleClass('open');
-    	$("header #barra .container .menu").toggleClass("desplegar");
-    	$("header #barra .container .fondo").toggle();
+    	$(".menu").toggleClass("desplegar");
+    	$(".fondo").toggle();
     });
 
     //INICIO CUMPLEAÑOS

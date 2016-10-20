@@ -46,7 +46,11 @@
                     <h2>Notas</h2>
                 </div>
                 <div class="triangulo"></div>
-                <!--Notas--><?php $view = views_get_view('home'); print $view->preview('block_3'); ?><!--FIN Notas--> 
+                <!--Notas--><?php $view = views_get_view('home'); print $view->preview('block_3'); ?><!--FIN Notas-->
+                <div class="triangulo2"></div>
+                <div class="title2">
+                    <h2>Nuestra Gente</h2>
+                </div>
             </div>
             <div class="noestan">
                 <div class="title">

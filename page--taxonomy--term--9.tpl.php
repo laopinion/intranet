@@ -1,4 +1,4 @@
-<div class="container"> 
+<div class="container-vaca"> 
     <div class="title">
         <h2>Vacaciones</h2>
     </div>

@@ -4,7 +4,7 @@
 	</div>
 	<div class="datos">
 	    <div class="foto">
-	    	<div class="container" style="padding: 40px 0; border-top: 1px solid #BFBFBF;
+	    	<div class="container info" style="padding: 40px 0; border-top: 1px solid #BFBFBF;
     border-bottom: 1px solid #BFBFBF;">
 	    		<div class="perfil-foto">
 	    			<?php print render($user_profile['user_picture']);?>

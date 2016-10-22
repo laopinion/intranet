@@ -20,7 +20,7 @@
 				<span class="izq_abajo"></span>
 				<span class="der_abajo"></span>
 			</div>
-			<a href="#buscar">
+			<a href="<?php print base_path(); ?>buscar">
 				<div class="buscador"></div>
 				<h4>Buscar</h4>
 			</a>
@@ -34,12 +34,6 @@
 		<li><a href="<?php print base_path(); ?>cumpleanos">Cumpleaños</a></li>
 		<div class="divider"></div>
 		<li><a href="<?php print base_path(); ?>vacaciones">Vacaciones</a></li>
-		<div class="divider"></div>
-		<li><a href="#">Actividades</a></li>
-		<div class="divider"></div>
-		<li><a href="#">Cuestionarios</a></li>
-		<div class="divider"></div>
-		<li><a href="#">Comites</a></li>
 		<div class="divider"></div>
 		<li><a href="<?php print base_path(); ?>galerias">Galerias</a></li>
 		<div class="divider"></div>

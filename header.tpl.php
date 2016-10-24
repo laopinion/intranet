@@ -27,7 +27,7 @@
 		</article>
 	</section>
 </header>
-<div class="menu">
+<div class="menu-opciones">
 	<ul>
 		<li><a href="<?php print base_path(); ?>entrevista-del-mes">Entrevista del mes</a></li>
 		<div class="divider"></div>
